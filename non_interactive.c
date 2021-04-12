@@ -1,11 +1,11 @@
 #include "simple_shell.h"
 
 /**
- * non_interactive - This function validates if the user writes a command from keyboard.
- * @av: Pointer to strings with all arguments of input in each postiion.
- * Return: void.
- **/
-int non_interactive(char **av)
+*no_interactive - This function validates if the user writes a command from keyboard.
+*@av: Pointer to strings with all arguments of input in each position.
+**/
+
+int no_interactive(char **av)
 {
   char error_msg[120];
 
