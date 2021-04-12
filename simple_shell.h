@@ -10,8 +10,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <signal.h>
 
 char *_getenv(const char *name);
-int non_interactive(char **av);
+int no_interactive(char **av);
+void sig_handler(int sig);
 
 #endif /* SIMPLE_SHELL_H */
