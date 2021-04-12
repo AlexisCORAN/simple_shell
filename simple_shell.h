@@ -12,5 +12,6 @@
 #include <string.h>
 
 char *_getenv(const char *name);
+int non_interactive(char **av);
 
 #endif /* SIMPLE_SHELL_H */
