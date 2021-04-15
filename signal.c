@@ -1,9 +1,9 @@
 #include "simple_shell.h"
 
 /**
-* sig_handler -
+* sig_handler - check the parameter
 *
-*@sig:
+*@sig: the number of the signal.
 */
 
 void sig_handler(int sig)
