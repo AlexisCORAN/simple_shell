@@ -1,7 +1,7 @@
 #include "simple_shell.h"
 
 /**
-* _exit - Fuction that return a value especific of exit
+* function_exit - Fuction that return a value especific of exit
 *
 *@line: Input buffer
 *
@@ -12,7 +12,8 @@
 *@count: Counter
 *
 * Return: Value of exit return
-*/
+**/
+
 int function_exit(char *line, int status, char *av, int count)
 {
 	char *args[3], *tmp = NULL, *token = NULL, msg[100];
