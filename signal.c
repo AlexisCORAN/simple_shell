@@ -1,5 +1,11 @@
 #include "simple_shell.h"
 
+/**
+* sig_handler -
+*
+*@sig:
+*/
+
 void sig_handler(int sig)
 {
 	if (sig)

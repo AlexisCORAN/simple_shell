@@ -1,5 +1,16 @@
 #include "simple_shell.h"
 
+/**
+* main - function main
+*
+*@ac: ounts the number of arguments.
+*
+*@av: contains the total number of arguments.
+*
+*@env: variable envirionment system.
+*
+*Return: estatus_exit value.
+**/
 
 int main(int ac, char *av[], char **env)
 {

@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "simple_shell.h"
+
 /**
 * _memset - fills memory with a constant byte.
 *
@@ -10,6 +11,7 @@
 *
 *Return: char
 */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int cont = 0;
@@ -21,12 +23,17 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
+
 /**
 * _calloc - function that allocates memory for an array, using malloc
+*
 * @nmemb: amount to values to store on memory
+*
 *@size: number of bytes of datatype
 *
+* Return: void
 */
+
 void *_calloc(unsigned int nmemb, int size)
 {
 	void *p = NULL;

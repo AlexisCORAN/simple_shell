@@ -1,22 +1,39 @@
 #include "simple_shell.h"
 
 /**
- *_getenv-A function gets the environment variable PATH
- *@name: Name of the PATH variable
- *Return: A pointer to the environment variable PATH on success
- *returns NULL on failure
- */
-
-char *_getenv(const char *name)
+* _getenv - get variable enviriomment
+*
+* @name: name the variable envirionment
+*
+* @env: variable global envirionment system
+*
+* Return: char value envirionment
+**/
+char *_getenv(char *name, char **env)
 {
-  int index, len;
+	char *token1 = NULL, *token2 = NULL;
+	char *env_name = NULL, *current_env = NULL;
+	int i = 0;
 
-  len = _strlen(name);
-  for (index = 0; environ[index]; index++)
-  {
-    if (_strncmp(name, environ[index], len) == 0)
-      return (environ[index]);
-  }
+	env_name = _strdup(name);
 
-  return (NULL);
+	while (env[i] && env)
+	{
+		current_env = NULL;
+		token2 = NULL;
+		current_env = _strdup(env[i]);
+		token1 = strtok(current_env, "=");
+		token2 = _strdup(strtok(NULL, "="));
+		if (_strcmp(env_name, token1) == 0)
+		{
+			break;
+		}
+		free(current_env);
+		free(token2);
+		i++;
+	}
+	free(current_env);
+	current_env = NULL;
+	free(env_name);
+	return (token2);
 }
