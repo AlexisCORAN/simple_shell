@@ -1,0 +1,37 @@
+.TH HSH 1 "14 April 2021" "0.1" "HSH"
+.SH NAME
+.B hsh
+- command interpreter
+.SH SYNOPSIS
+.B ./hsh 
+.SH DESCRIPTION
+The hsh shell is a command-line interpreter that provides a command line user interface for Unix-like operating systems.
+.B Overview
+The shell is a command that reads lines from either a file or 
+the terminal, interprets them, and generally executes other commands.
+It is the program that is running when a user logs into the system.
+.B Interactive mode
+The commands are run with user-interaction from keyboard. 
+E.g. the shell can prompt the user to enter input.
+.B Non-interactive mode
+The shell is probably run from an automated process so it can't assume if can request input or that someone will see the output.
+E.g Maybe it is best to write output to a log-file.
+.SH INITIALIZATION
+Your shell will be compiled this way:
+
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.SH EXAMPLE
+#shell$ ./hsh
+
+#shell$ /bin/ls
+
+---- files ------
+
+#shell$
+
+.SH SEE ALSO
+Nothing else.
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Alexis Coronado, Octavio Lafourcade.
